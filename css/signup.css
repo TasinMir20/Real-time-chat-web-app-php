@@ -1,0 +1,235 @@
+/* Font Family */
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../font-family/Nunito-Regular.woff2') format('woff2'),
+        url('../font-family/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Light';
+    src: url('../font-family/Nunito-Light.woff2') format('woff2'),
+        url('../font-family/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('../font-family/Nunito-Bold.woff2') format('woff2'),
+        url('../font-family/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+/* defult valus start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(245, 246, 248);
+    font-family: Nunito-Regular;
+}
+:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+section {
+    width: 100%;
+    color: #aeaeae;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* defult valus end */
+
+
+.section-sign-up .container {
+    padding: 50px 0;
+    font-size: 19px;
+}
+.section-sign-up .container .create-account-container {
+    padding: 20px 20px 30px 20px;
+    width: 600px;
+    background-color: #ffffff;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%), 0 10px 10px rgb(90 97 105 / 6%), 0 7px 70px rgb(90 97 105 / 10%);
+}
+.section-sign-up .container .create-account-container .heading {
+    text-align: center;
+    color: #5183ac;
+    font-size: 24px;
+    font-family: Nunito-Bold;
+    padding: 15px 0;
+}
+.section-sign-up .container .create-account-container form .contnr-inpt {
+    width: 100%;
+    margin-top: 20px;
+}
+.section-sign-up .container .create-account-container form .pass-contnr {
+    position: relative;
+
+}
+.section-sign-up .container .create-account-container form .pass-contnr i {
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.section-sign-up .container .create-account-container form .contnr-inpt .inputs {
+    width: 100%;
+    font-family: Nunito-Light;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+.section-sign-up .container .create-account-container form .contnr-inpt .inputs:focus {
+    border-color: #007bff;
+    box-shadow: 0 0.313rem 0.719rem rgb(0 123 255 / 10%), 0 0.156rem 0.125rem rgb(0 0 0 / 6%);
+}
+.section-sign-up .container .create-account-container form .contnr-inpt .sign-up-btn {
+    width: 100%;
+    font-size: 16px;
+    font-family: Nunito-Regular;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3c6382;
+    padding: 6px 0;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.section-sign-up .container .create-account-container form .contnr-inpt .sign-up-btn:hover {
+    background-color: #0a3d62;
+    border-color: #0062cc;
+}
+.section-sign-up .container .create-account-container .already-hv-acnt {
+    font-family: Nunito-Regular;
+    color: #333;
+    margin-top: 15px;
+    font-size: 17px;
+}
+.section-sign-up .container .create-account-container .already-hv-acnt a {
+    color: #5183ac;
+    font-family: Nunito-Regular;
+}
+.section-sign-up .container .create-account-container .fdbk-aftr-sbmt {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.section-sign-up .container .create-account-container .fdbk-aftr-sbmt .warning-message {
+    margin-top: 3px;
+    padding: 5px  0 5px 10px;
+    background-color: #fff8c4;
+    border: 1px solid #f7deae;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.section-sign-up .container .create-account-container .fdbk-aftr-sbmt .danger-message {
+    margin-top: 3px;
+    padding: 5px  0 5px 10px;
+    background-color: #ffecec; 
+    border: 1px solid #fad9d7;
+    border-radius: 4px;
+}
+.section-sign-up .container .create-account-container .fdbk-aftr-sbmt .success-message {
+    margin-top: 3px;
+    padding: 5px  0 5px 10px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #e9ffd9;
+    border: 1px solid #D1FAB6;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Style */
+@media all and (max-width: 768px) {
+    .section-sign-up .container .create-account-container {
+        width: 100%;
+    }
+}
+
+
+@media all and (max-width: 450px) {
+    .section-sign-up .container {
+        width: 100%;
+    }
+    .section-sign-up .container .create-account-container .heading {
+        font-size: 20px;
+        
+    }
+
+    .section-sign-up .container .create-account-container .already-hv-acnt {
+        font-size: 16px;
+    }
+    
+}
+
+

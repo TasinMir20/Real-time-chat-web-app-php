@@ -1,0 +1,232 @@
+
+/* Font Family */
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../font-family/Nunito-Regular.woff2') format('woff2'),
+        url('../font-family/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Light';
+    src: url('../font-family/Nunito-Light.woff2') format('woff2'),
+        url('../font-family/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('../font-family/Nunito-Bold.woff2') format('woff2'),
+        url('../font-family/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+/* defult valus start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(245, 246, 248);
+    font-family: Nunito-Regular;
+}
+:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+section {
+    width: 100%;
+    color: #aeaeae;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* defult valus end */
+
+
+.section-login .container {
+    padding: 50px 0;
+    font-size: 19px;
+}
+.section-login .container .login-account-container {
+    padding: 20px 20px 30px 20px;
+    width: 600px;
+    background-color: #ffffff;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%), 0 10px 10px rgb(90 97 105 / 6%), 0 7px 70px rgb(90 97 105 / 10%);
+}
+.section-login .container .login-account-container .heading {
+    text-align: center;
+    color: #60a3bc;
+    font-size: 24px;
+    font-family: Nunito-Bold;
+    padding: 15px 0;
+}
+
+.section-login .container .login-account-container form .contnr-inpt {
+    width: 100%;
+    margin-top: 20px;
+}
+.section-login .container .login-account-container form .pass-contnr {
+    position: relative;
+
+}
+.section-login .container .login-account-container form .pass-contnr i {
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.section-login .container .login-account-container form .contnr-inpt .inputs {
+    width: 100%;
+    font-family: Nunito-Light;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+.section-login .container .login-account-container form .contnr-inpt .inputs:focus {
+    border-color: #007bff;
+    box-shadow: 0 0.313rem 0.719rem rgb(0 123 255 / 10%), 0 0.156rem 0.125rem rgb(0 0 0 / 6%);
+}
+.section-login .container .login-account-container form .contnr-check {
+    margin-top: 10px;
+    user-select: none;
+}
+.section-login .container .login-account-container form .contnr-check label {
+    color: #aeaeae;
+    font-size: 16px;
+}
+
+
+
+
+.section-login .container .login-account-container form .contnr-inpt .login-btn {
+    width: 100%;
+    font-size: 16px;
+    font-family: Nunito-Regular;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #60a3bc;
+    padding: 6px 0;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.section-login .container .login-account-container form .contnr-inpt .login-btn:hover {
+    background-color: #437c91;
+    border-color: #0062cc;
+}
+.section-login .container .login-account-container .still-dont-acnt {
+    font-family: Nunito-Regular;
+    color: #333;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.section-login .container .login-account-container .still-dont-acnt a {
+    color: #60a3bc;
+    font-family: Nunito-Regular;
+}
+.section-login .container .login-account-container .fdbk-aftr-sbmt {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.section-login .container .login-account-container .fdbk-aftr-sbmt .warning-message {
+    margin-top: 3px;
+    padding: 5px  0 5px 10px;
+    background-color: #fff8c4;
+    border: 1px solid #f7deae;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.section-login .container .login-account-container .fdbk-aftr-sbmt .danger-message {
+    margin-top: 3px;
+    padding: 5px  0 5px 10px;
+    background-color: #ffecec; 
+    border: 1px solid #fad9d7;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+/* Responsive Style */
+@media all and (max-width: 768px) {
+    .section-login .container .login-account-container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .section-login .container {
+        width: 100%;
+    }
+    .section-login .container .login-account-container .heading {
+        font-size: 20px;
+        
+    }
+
+    .section-login .container .login-account-container .still-dont-acnt {
+        font-size: 16px;
+    }
+    
+}
